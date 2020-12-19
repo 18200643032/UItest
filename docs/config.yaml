@@ -1,0 +1,180 @@
+index:
+  url: https://developer.aiebuy.cn/
+  youshang_login: xpath->//a[text()="登录"]
+  youshang_zhuci: xpath->//a[text()="注册"]
+  suanfadasai: xpath->//a[text()="算法大赛"]
+  xiangmu: xpath->//a[text()="项目"]
+  kaifahuanjin: xpath->//a[text()="开发环境"]
+  zhong_login: xpath->//span[text()="登录"]
+  zhong_zhuci: xpath->//span[text()="注册"]
+  zhong_img1: xpaths->//div[@class="img"]->0
+  zhong_img2: xpaths->//div[@class="img"]->1
+  zhong_img3: xpaths->//div[@class="img"]->2
+  youxia_zhuci: xpath->//*[@id="root"]/section/main/div/div[3]/div[2]/a
+  go_gerenzhongxin: xpath->//span[text()="前往个人中心"]
+  duanyan1: xpath->//span[text()="登 录"]
+  duanyan2: xpath->//span[text()="注 册"]
+  duanyan3: xpath->//span[text()="前往个人中心"]
+  duanyan4: xpath->//div[text()="行人重识别"]
+  duanyan5: xpath->//div[text()="个人中心"]
+
+login:
+  url: https://developer.aiebuy.cn/login
+  login_username: id->username
+  login_password: id->password
+  login_sumbit: xpath->//*[@id="root"]/div/form/div[4]/div/div/div/button[1]
+
+register:
+  url: https://developer.aiebuy.cn/register
+  register_username: id->username
+  resgister_phone: id->mobile
+  resgister_password: id->password
+  resgister_res: id->captcha_value
+  resgister_code: id->verification_code
+  resgister_check: id->check
+  resgister_sumbit: span->//span[text()='注 册']
+
+
+
+
+suanfadasai:
+  url: https://developer.aiebuy.cn/race
+  zhong_xingren: xpath->//a[@class="cv-link-item"]->0
+  zhong_arfuzhu: xpath->//a[@class="cv-link-item"]->1
+  saiti_1: xpaths->//h4[@class="ant-list-item-meta-title"]/div/a->0
+  saiti_1_baomin: xpaths->//button[@type="button"]->0
+  saiti_2: xpaths->//h4[@class="ant-list-item-meta-title"]/div/a->0
+  saiti_2_baomin: xpaths->//button[@type="button"]->1
+  saiti_3: xpaths->//h4[@class="ant-list-item-meta-title"]/div/a->0
+  saiti_3_baomin: xpaths->//button[@type="button"]->2
+  saiti_4: xpaths->//h4[@class="ant-list-item-meta-title"]/div/a->0
+  saiti_4_baomin: xpaths->//button[@type="button"]->3
+  saiti_5: xpaths->//h4[@class="ant-list-item-meta-title"]/div/a->0
+  saiti_5_baomin: xpaths->//button[@type="button"]->4
+  saiti_1_saizhi: xpath->//a[text()="赛制"]
+  saiti_1_saiti: xpath->//a[text()="赛题"]
+  saiti_1_shujuji: xpath->//a[text()="数据集"]
+  saiti_1_paihangbang: xpath->//a[text()="排行榜"]
+  saiti_1_shujuji_zhankai: xpath->//button[@aria-label="展开行"]
+  saiti_1_shujuji_zhankai_one: xpaths->//div[@class="ant-col ant-col-4 img_box"]->0
+
+  saiti_1_baomin_gouxuan: id->signup_form_check
+  tijiao: xpath->/html/body/div[2]/div/div[2]/div/div[2]/div[3]/div/button[2]
+  xiayiye: xpath->//li[@title="下一页"]
+  shangyiye: xpath->//li[@title="上一页"]
+  chuangjianshili: id->instance_form_frame_id
+  xuanzhekuangjia: xpath->//div[text()="TensorFlow-1.13"]
+  duanyan1: xpath->//span[text()="报名成功"
+  duanyan2: xpath->//span[text()="创建中"]
+  duanyan3: xpath->//span[text()="编码中"]
+  duanyan4: xpath->//a[text()="基本信息"]
+  duanyan5: xpath->//img[@alt='example']
+
+xiangmu:
+  url: https://developer.aiebuy.cn/project
+  saiti_1: xpaths->//h4[@class="ant-list-item-meta-title"]/div/a->0
+  saiti_1_baomin: xpaths->//button[@type="button"]>0
+  saiti_2: xpaths->//h4[@class="ant-list-item-meta-title"]/div/a->1
+  saiti_2_baomin: xpaths->//button[@type="button"]->1
+  saiti_3: xpaths->//h4[@class="ant-list-item-meta-title"]/div/a->2
+  saiti_3_baomin: xpaths->//button[@type="button"]->2
+  saiti_4: xpaths->//h4[@class="ant-list-item-meta-title"]/div/a->3
+  saiti_4_baomin: xpaths->//button[@type="button"]->3
+  saiti_5: xpaths->//h4[@class="ant-list-item-meta-title"]/div/a->4
+  saiti_5_baomin: xpaths->//button[@type="button"]->4
+  saiti_1_saizhi: xpath->//a[text()="赛制"]
+  saiti_1_saiti: xpath->//a[text()="赛题"]
+  saiti_1_shujuji: xpath->//a[text()="数据集"]
+  saiti_1_paihangbang: xpath->//a[text()="排行榜"]
+  saiti_1_shujuji_zhankai: xpath->//button[@aria-label="展开行"]
+  xiayiye: xpath->//li[@title="下一页"]
+  shangyiye: xpath->//li[@title="上一页"]
+
+
+kaifahuanjing:
+  go_xiangmu_list: xpath->//span[text()='参与项目列表']
+  click_xiangmu1: xpaths->//div[@class="ant-row ant-row-space-around item"]/div/a->0
+  #项目详情
+  click_xiangmu1_jibenxinxi: xpath->//a[text()="基本信息"]
+  click_xiangmu1_xunlianrenwu: xpath->//a[text()="训练任务"]
+  click_xiangmu1_xunlianrenwu_xinjianrenwu: xpath->//span[text()="新建任务"]
+  click_xiangmu1_xunlianrenwu_xinjianrenwu_wanchen: xpath->//span[text()="完 成"]
+  click_xiangmu1_xunlianrenwu_xinjianrenwu_weiwanchen: xpath->//span[text()="未完成"]
+  click_xiangmu1_xunlianrenwu_xinjianrenwu_wanchen_zhixinmingling: id->create_train_form_exec_command
+  click_xiangmu1_xunlianrenwu_xinjianrenwu_wanchen_zhixinmingling_submit: xpath->span[text()="提 交"]
+  click_xiangmu1_xunlianrenwu_xinjianrenwu_wanchen_zhixinmingling_notsubmit: xpath->span[text()="取 消"]
+  click_xiangmu1_xunlianrenwu_xinjianrenwu_wanchen_xuanzhemoxin: id->create_train_form_model_dir_id
+  click_xiangmu1_xunlianrenwu_xinjianrenwu_wanchen_miaoshu: id->create_train_form_remark
+  click_xiangmu1_xunlianrenwu_xiangqing: xpaths->//span[text()="详情"]->0
+  click_xiangmu1_xunlianrenwu_zhongzhi: xpaths->//span[text()="中止"]->0
+  click_xiangmu1_xunlianrenwu_chexiao: xpaths->//span[text()="撤销"]->0
+
+  #实时演示
+  click_xiangmu1_shishiyanshi: xpath->//a[text()="实时演示"]
+  click_xiangmu1_shujuliu: xpath->//input
+  click_xiangmu1_shujuliu_xuanze1: xpath->//div[@class="ant-select-item ant-select-item-option ant-select-item-option-active"]
+  click_xiangmu1_huoquliudizhi: xpath->//span[text()="获取流地址"]
+  click_xiangmu1_zhanshisuanfayuce: xpath->//span[text()="展示算法预测"]
+
+  #模型列表
+
+  click_xiangmu1_moxingliebiao: xpath->//a[text()="模型列表"]
+  click_xiangmu1_moxingliebiao_xiangqing: xpath->//tbody[@class="ant-table-tbody"]/tr[1]/td[5]/div
+
+
+  #测试任务
+  click_xiangmu1_ceshirenwu: xpath->//a[text()="测试任务"]
+  #详情等晚点写
+  click_xiangmu1_ceshirenwu_faqibiaozhunceshi: xpath->//span[text()="发起标准模型测试"]
+  click_xiangmu1_ceshirenwu_faqibiaozhunceshi_wancheng: xpath->//span[text()="完 成"]
+  click_xiangmu1_ceshirenwu_faqibiaozhunceshi_weiwancheng: xpath->//span[text()="未完成"]
+  click_xiangmu1_ceshirenwu_faqibiaozhunceshi_weiwancheng_moxingwenjian: id->create_test_form_model_dir_ids
+  click_xiangmu1_ceshirenwu_faqibiaozhunceshi_weiwancheng_suanfamingcheng: id->create_test_form_algorithm_name
+  click_xiangmu1_ceshirenwu_faqibiaozhunceshi_weiwancheng_suanfabiaoqian: id->create_test_form_algorithm_tag
+  click_xiangmu1_ceshirenwu_faqibiaozhunceshi_weiwancheng_suanfamiaoshu: id->create_test_form_algorithm_description
+  click_xiangmu1_ceshirenwu_faqibiaozhunceshi_weiwancheng_submit: xptah->//span[text()="提 交"]
+  click_xiangmu1_ceshirenwu_faqibiaozhunceshi_weiwancheng_quxiao: xptah->//span[text()="取 消"]
+  click_xiangmu1_ceshirenwu_faqiopenvinoceshi: xpath->//span[text()="发起OpenVINO模型测试"]
+
+
+  #授权SDK
+  click_xiangmu1_shouquansdk: xpath->//a[text()="授权sdk"]
+  click_xiangmu1_shouquansdk_tijiaofengzhuang: xpath->//span[text()="提交封装"]
+  click_xiangmu1_shouquansdk_tijiaofengzhuang_opencvbanben: id->create_test_form_opencv_version
+  click_xiangmu1_shouquansdk_tijiaofengzhuang_suanfamiaoshu: id->create_test_form_remark
+  click_xiangmu1_shouquansdk_tijiaofengzhuang_submit: xpath->//span[text()="确认提交"]
+  click_xiangmu1_shouquansdk_tijiaofengzhuang_guanbi: xpath->//span[text()="关 闭"]
+  click_xiangmu1_shouquansdk_jupyterlab: xpath->//a[text()="JupyterLab"]
+
+  #在线编码
+  xiangmu_1_zaixianbianma: xpaths->//a[text()='在线编码']->0
+  xiangmu_1_zaixianbianma_jupyterlab: xpaths->//a[text()="JupyterLab"]->0
+  xiangmu_1_zaixianbianma_huifubianmahuanjing: xpaths->//span[text()="恢复编码环境"]->0
+  xiangmu_1_zaixianbianma_shishijiankong: xpaths->//span[text()="实时监控"]->0
+  xiangmu_1_zaixianbianma_openvinojupyterlab: xpaths->//a[text()="JupyterLab"]->1
+  xiangmu_1_zaixianbianma_openvinohuifubianmahuanjing: xpaths->//span[text()="恢复编码环境"]->1
+  xiangmu_1_zaixianbianma_openvinoshishijiankong: xpaths->//span[text()="实时监控"]->1
+  xiangmu_1_zaixianbianma_shangchuangwenjian: xpaths->//span[text()="上传文件"]->1
+  xiangmu_1_zaixianbianma_xunlianmoxing: xpaths->//span[text()="预训练模型"]->1
+  xiangmu_1_zaixianbianma_goujianxunlianjingxiang: xpath->//span[text()="构建训练镜像"]
+  xiangmu_1_zaixianbianma_goujianxunlianjingxiang_rizhi: xpaths->//span[text()="构建日志"]->0
+  xiangmu_1_zaixianbianma_goujianceshijingxiang: xpath->//span[text()="构建测试镜像"]
+  xiangmu_1_zaixianbianma_goujianceshijingxiang_rizhi: xpaths->//span[text()="构建日志"]->1
+  xiangmu_1_zaixianbianma_goujianopenvinoceshijingxiang: xpath->//span[text()="构建测试镜像"]
+  xiangmu_1_zaixianbianma_goujianopenvinojingxiang_rizhi: xpaths->//span[text()="构建日志"]->2
+  xiangmu_1_faqixunlian: xpaths->//a[text()='发起训练']->0
+  xiangmu_1_zidongceshi: xpaths->//a[text()='自动测试']->0
+  xiangmu_1_gengduo: xpaths->//a[text()='更多']->[0]
+  xiangmu_1_gengduo_start: xpath->//span[text()='启用实例']
+  xiangmu_1_gengduo_stop: xpath->//span[text()='停用实例']
+  xiangmu_1_gengduo_restart: xpath->//span[text()='重建实例']
+  xiangmu_1_gengduo_restart_submit: xpath->//span[text()='确 认']
+  xiangmu_1_gengduo_cut: xpath->//span[text()='切换框架']
+
+  #竞赛列表
+  go_jingsai_list: xpath->//span[text()='参与竞赛列表']
+
+
+
+
+
